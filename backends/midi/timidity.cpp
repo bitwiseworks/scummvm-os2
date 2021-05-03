@@ -58,6 +58,9 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <errno.h>
+#ifdef __OS2__
+#include <libcx/net.h>
+#endif
 
 // BeOS BONE uses snooze (x/1000) in place of usleep(x)
 #ifdef __BEOS__
