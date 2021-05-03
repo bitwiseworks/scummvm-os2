@@ -459,7 +459,7 @@ find_sdlconfig() {
 		for sdlconfig in $sdlconfigs; do
 			if test -f "$path_dir/$sdlconfig" ; then
 				_sdlconfig="$path_dir/$sdlconfig"
-				echo $_sdlconfig
+				echo "$_sdlconfig"
 				# Save the prefix
 				_sdlpath=$path_dir
 				if test `basename $path_dir` = bin || test `basename $path_dir` = sbin ; then
@@ -494,7 +494,7 @@ find_freetypeconfig() {
 		for freetypeconfig in $freetypeconfigs; do
 			if test -f "$path_dir/$freetypeconfig" ; then
 				_freetypeconfig="$path_dir/$freetypeconfig"
-				echo $_freetypeconfig
+				echo "$_freetypeconfig"
 				# Save the prefix
 				_freetypepath=$path_dir
 				if test `basename $path_dir` = bin ; then
@@ -528,7 +528,7 @@ find_libcurlconfig() {
 		for libcurlconfig in $libcurlconfigs; do
 			if test -f "$path_dir/$libcurlconfig" ; then
 				_libcurlconfig="$path_dir/$libcurlconfig"
-				echo $_libcurlconfig
+				echo "$_libcurlconfig"
 				# Save the prefix
 				_libcurlpath=$path_dir
 				if test `basename $path_dir` = bin ; then
